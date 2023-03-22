@@ -1,12 +1,38 @@
-const myimage  = document.querySelector('img');
+// Image switcher code
 
+let myImage = document.querySelector('img');
 
-myimage.onclick = ()=>{
-    const mysrc = myimage.getAttribute('src');
+myImage.onclick = function() {
+  let mySrc = myImage.getAttribute('src');
+  if(mySrc === 'images/fire-fox.jpg') {
+    myImage.setAttribute ('src','images/fire-fox1.jpg');
+  } else {
+    myImage.setAttribute ('src','images/fire-fox.jpg');
+  }
+}
 
-    if (mysrc === "images/fire-fox.jpg"){
-        myimage.setAttribute('src', 'images/fire-fox1.jpg');
-    } else{
-        myimage.setAttribute('src', "images/fire-fox.jpg")
-    }
+// Personalized welcome message code
+
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
+
+function setUserName() {
+  let myName = prompt('Please enter your name.');
+  if(!myName) {
+    setUserName();
+  } else {
+    localStorage.setItem('name', myName);
+    myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+  }
+}
+
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  let storedName = localStorage.getItem('name');
+  myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
+}
+
+myButton.onclick = function() {
+  setUserName();
 }
