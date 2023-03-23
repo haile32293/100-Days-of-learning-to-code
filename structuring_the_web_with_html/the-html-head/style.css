@@ -1,0 +1,15 @@
+html {
+    background-color: rgb(199, 211, 199);
+    font-size: 30px;
+  }
+  
+  ul {
+    background: rgb(131, 85, 85);
+    padding: 50px;
+    border: 1px solid black;
+  }
+  
+  li {
+    margin-left: 10px;
+    padding: 50px;
+  }
