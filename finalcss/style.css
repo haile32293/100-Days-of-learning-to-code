@@ -1,0 +1,40 @@
+body{
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2;
+   
+  
+}
+h1{
+    color: hotpink;
+    text-align: right;
+    border-bottom: 5px dotted purple;
+}
+.jobtype{
+    color: rgb(116, 132, 183);
+    font-style: italic;
+    font-weight: bold;
+
+}
+p{
+    margin: 20px;
+    padding: 20px;
+   
+
+}
+.contact{
+    font-style: oblique;
+    font-weight: bold;
+    font-size: xx-large;
+}
+ul{
+ border: 5px solid purple;
+ padding: 20px;
+ background-color: antiquewhite;
+}
+a:link{
+    color: rgb(183, 122, 122);
+}
+a:hover{
+    color: green;
+}
